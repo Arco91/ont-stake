@@ -19,12 +19,12 @@ export default class StakedNodes extends React.Component<Props, any> {
 
         <div className='staked-nodes-header'>
           <div className='title'>{'Staked Nodes'}</div>
-            <div
+          <div
             className='primary-btn'
             onClick={() => dispatch(push('/nodelist'))}
-            >
+          >
             {'+ Create New Stake'}
-            </div>
+          </div>
         </div>
 
         {!Object.keys(stakes).length ? this.renderEmpty() : this.renderStakes()}
